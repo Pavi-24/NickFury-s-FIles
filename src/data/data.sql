@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS charachter(
+    id SERIAL PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    aliases VARCHAR(100) NOT NULL,
+    powers VARCHAR(100) NOT NULL,
+    description VARCHAR(100) NOT NULL,
+    created_at TIMESTAMP DEFAULT NOW()
+)
